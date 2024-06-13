@@ -2,32 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    src: url('/fonts/Pretendard-Regular.otf');
+    font-family: 'Pretendard';
+}
+
+@font-face {
+    src: url('/fonts/Pretendard-Bold.otf');
+    font-family: 'Pretendard-B';
+}
+
+@font-face {
+    src: url('/fonts/Pretendard-ExtraBold.otf');
+    font-family: 'Pretendard-EB';
+}
+
+@font-face {
+    src: url('/fonts/Pretendard-Medium.otf');
+    font-family: 'Pretendard-M';
+}
+
+@font-face {
+    src: url('/fonts/Pretendard-Light.otf');
+    font-family: 'Pretendard-R';
+}
+
+@font-face {
+    src: url('/fonts/Pretendard-ExtraLight.otf');
+    font-family: 'Pretendard-L';
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('/fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans-B';
+    src: url('/fonts/NotoSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans-M';
+    src: url('/fonts/NotoSans-Medium.ttf');
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    :root {
+        --foreground-rgb: #f0f0fa;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
+    background: #f0f0fa;
+    display: flex;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
