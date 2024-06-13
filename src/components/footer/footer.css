@@ -25,3 +25,20 @@
     font-family: 'Noto Sans-M';
     font-size: 30px;
 }
+
+
+.footer-content li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.footer-content li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.footer-content li p {
+    margin: 0;
+}
