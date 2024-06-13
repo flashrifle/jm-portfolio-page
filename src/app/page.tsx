@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Header from '@/components/header/Header';
+import Footer from '@/components/footer/Footer';
 
 export default function Home() {
   return (
     <>
-      <h1>이재민 포트폴리오 사이트</h1>
+      <Header />
+      <Footer />
     </>
   );
 }
