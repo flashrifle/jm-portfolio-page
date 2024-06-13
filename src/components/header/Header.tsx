@@ -8,12 +8,6 @@ export default function Header() {
           <div>
             <p className="header-logo-text">@_leejaem</p>
           </div>
-          <div className="header-content">
-            <p>Github</p>
-            <p>Blog</p>
-            <p>Youtube</p>
-            <p>Instagram</p>
-          </div>
         </div>
       </div>
     </>
